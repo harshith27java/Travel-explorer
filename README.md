@@ -68,3 +68,4 @@ npm run lint
 - If `code .` is not recognized, use VS Code's **File > Open Folder** menu instead.
 - If a simulator is not available, run the Expo server and open the project with a compatible Expo Go device on the same network.
 - If a remote travel image is unavailable, the app shows its built-in neutral image fallback instead of a broken-image indicator.
+# Travel-explorer
