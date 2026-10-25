@@ -1,71 +1,91 @@
-# Travel Explorer
+# 🌍 Travel Explorer
 
-Travel Explorer is a React Native and Expo travel discovery app focused on curated destinations across India. It includes Discover, Search, and Wishlist tabs, destination detail pages, category filters, related destinations, and locally persisted wishlist storage.
+**Discover places. Find your next adventure.**
 
-## Requirements
+Travel Explorer is a mobile travel discovery application built with React Native and Expo. It helps users explore destinations, browse places by category, search for interesting locations, and save their favourite destinations for later.
 
-- macOS on Apple Silicon or Intel
-- Node.js with npm
-- Visual Studio Code
-- An iOS Simulator, Android Emulator, or Expo Go-compatible phone for native preview
+## 📱 Download the App
 
-The project uses Expo SDK 57, Expo Router, React Native, and AsyncStorage. Destination and attraction content is bundled locally. No backend or login is required for the app's core features.
+**[⬇️ Download Travel Explorer for Android](https://bit.ly/4yECyvq)**
 
-## Extract and open on macOS
+The link opens the existing Expo build page. Follow the download option there to download the APK. Android installation may require permission to install apps from your browser.
 
-1. Double-click the downloaded ZIP in Finder, or Control-click it and choose **Open With > Archive Utility**.
-2. Open Terminal and move into the extracted folder:
+## ✨ Features
 
-```bash
-cd /path/to/Travel-Explorer
-```
+- **Explore Destinations** — Browse a collection of travel destinations.
+- **Category-Based Discovery** — Discover places by category.
+- **Search Destinations** — Find destinations you're interested in.
+- **Destination Details** — View additional information about individual destinations.
+- **Wishlist** — Save favourite destinations for later.
+- **User-Friendly Interface** — Navigate through a clean, intuitive mobile interface.
 
-3. Open the project in VS Code:
+## 🛠️ Tech Stack
 
-```bash
-code .
-```
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- npm
+- EAS Build
 
-If the `code` command is unavailable, open VS Code and choose **File > Open Folder**.
+## 🚀 Getting Started
 
-## Install and run
+### Prerequisites
 
-From the project folder, install the locked dependency set:
+- Node.js and npm
+- Git
+- An Expo-compatible development environment
 
-```bash
-npm install
-```
-
-Start the Expo development server with the existing project script:
-
-```bash
-npm run dev
-```
-
-Use the Expo developer menu to open the app in an available iOS Simulator, Android Emulator, or compatible Expo Go device. The app can also be exported for web with:
+### Install Dependencies
 
 ```bash
-npm run build:web
+npm ci
 ```
 
-## Environment variables
-
-The current Travel Explorer experience does not require environment variables because destination content and wishlist storage are local. The backup includes `.env.example` with safe placeholders for the existing Expo public Supabase variable names, but no private credentials are included.
-
-If you later enable a feature that uses those services, copy the example file to `.env` and fill in the values supplied by that service. Never commit `.env` to source control.
-
-## Useful checks
+### Start the Development Server
 
 ```bash
-npm run typecheck
-npm run lint
+npx expo start
 ```
 
-## Troubleshooting
+Follow the terminal instructions to open the app in a compatible development environment.
 
-- If dependencies appear incomplete, remove the extracted project's `node_modules` folder if one exists and run `npm install` again. The backup does not include `node_modules`.
-- If Expo reports a stale cache, stop the development server and start it again from the project folder.
-- If `code .` is not recognized, use VS Code's **File > Open Folder** menu instead.
-- If a simulator is not available, run the Expo server and open the project with a compatible Expo Go device on the same network.
-- If a remote travel image is unavailable, the app shows its built-in neutral image fallback instead of a broken-image indicator.
-# Travel-explorer
+## 📂 Project Structure
+
+```text
+Travel Explorer/
+├── app/             # Screens and routes
+├── assets/          # Images and icons
+├── components/      # Reusable UI components
+├── data/            # Application data
+├── hooks/           # Custom React hooks
+├── theme/           # Theme configuration
+├── app.json         # Expo configuration
+├── eas.json         # EAS build configuration
+├── package.json     # Dependencies and scripts
+├── package-lock.json
+├── tsconfig.json    # TypeScript configuration
+└── README.md
+```
+
+## 🎯 Project Objective
+
+Travel Explorer aims to make discovering travel destinations simple and engaging. The project demonstrates mobile application development, reusable components, navigation, search functionality, and the use of Expo for development and builds.
+
+## 🔮 Future Enhancements
+
+- Integration with live travel and destination APIs
+- Maps and location-based discovery
+- Detailed travel guides and itineraries
+- User accounts and synchronised wishlists
+- Personalised travel recommendations
+
+These are proposed enhancements, not claims about existing functionality.
+
+## 📄 License
+
+No formal open-source license has been specified for this project.
+
+---
+
+**Explore more. Travel farther. Make every journey count.** 🌏
